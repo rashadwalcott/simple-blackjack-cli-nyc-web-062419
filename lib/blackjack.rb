@@ -31,7 +31,7 @@ end
 
 def hit?(num)
   prompt_user
-  input = get_user_input
+  input = get_user_input.chomp.to_i
   if input == 's'
     num
     elsif input == 'h'
@@ -39,7 +39,7 @@ def hit?(num)
   else
     invalid_command
   end
-   puts prompt_user
+   prompt_user
 end
 
 def invalid_command

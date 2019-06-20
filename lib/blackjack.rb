@@ -41,7 +41,6 @@ def hit?(current_total)
     invalid_command
   end
    prompt_user
-   display_card_total(current_total)
 end
 
 def invalid_command

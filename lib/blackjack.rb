@@ -7,7 +7,7 @@ def deal_card
 end
 
 def display_card_total(card_total)
-  card_total = gets.chomp
+   gets.chomp.to_i
   puts "Your cards add up to #{card_total}"
 end
 

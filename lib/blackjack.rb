@@ -40,8 +40,8 @@ def hit?(current_total)
   else
     invalid_command
   end
-   prompt_user
    display_card_total(current_total)
+   prompt_user
 end
 
 def invalid_command

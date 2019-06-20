@@ -31,7 +31,7 @@ end
 
 def hit?(num)
   prompt_user
-  input = get_user_input.chomp.to_i
+  input = get_user_input
   if input == 's'
     num
     elsif input == 'h'
@@ -40,6 +40,7 @@ def hit?(num)
     invalid_command
   end
    prompt_user
+   display_card_total(num)
 end
 
 def invalid_command
